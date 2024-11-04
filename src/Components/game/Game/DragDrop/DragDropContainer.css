@@ -1,0 +1,13 @@
+/* src/DragDropContainer.css */
+.drop-zone {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #8f75db;
+
+    width: calc(100% - 163px);
+    height: calc(-330px + 100vh);
+    margin: 0 auto;
+}

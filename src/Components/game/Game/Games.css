@@ -1,0 +1,324 @@
+.bg-transparent {
+    border-color: #b55fed !important;
+    border-radius: 30px !important;
+    color: #af3fff !important;
+}
+
+.btn {
+    cursor: pointer !important;
+}
+
+.title-card {
+    font-size: 1.2rem;
+}
+
+.custom-badge {
+    background: #7347f7;
+    font-weight: 400 !important;
+    border-radius: 30px !important;
+}
+
+.user-img {
+    height: 40px;
+    width: 40px;
+}
+
+.curtom-card {
+    /* background-color: #f7deff !important; */
+    border-radius: 20px !important;
+    box-shadow: 0 3px 10px #0000001a;
+    cursor: pointer;
+}
+
+.main-heading {
+    font-weight: 600;
+    font-size: 37px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.add-game {
+    background-color: #7347f7 !important;
+    border-radius: 30px !important;
+
+    &:hover {
+        background-color: #6c3bff !important;
+    }
+}
+
+.custom-switch .custom-control-label::before {
+    width: 50px !important;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #fff;
+    transform: translateX(1.75rem) !important;
+}
+
+.form-check-input:checked {
+    background-color: #7347f7 !important;
+    border-color: #7347f7 !important;
+}
+
+.form-check-input {
+    border: none !important;
+}
+
+.form-switch .form-check-input {
+    width: 3em !important;
+    height: 1.5em !important;
+
+    &:focus {
+        box-shadow: 0 0 0 .25rem rgb(115 71 247 / 2%) !important
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.animated-div {
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.animated-div-enter {
+    animation-name: fadeInUp;
+}
+
+.animated-div-exit {
+    animation-name: fadeOutUp;
+}
+
+.custom-select {
+    height: 50px !important;
+
+    &:focus {
+        box-shadow: 0 4px 8px 0 rgb(175 63 255 / 19%), 0 6px 20px 0 rgb(115 71 247 / 16%) !important;
+        border-color: #af3fff !important;
+
+    }
+}
+
+.custom-select .custom-option {
+    &:hover {
+        background-color: #af3fff !important;
+    }
+
+}
+
+.avatar-img-container {
+    width: fit-content;
+}
+
+.avatar-img-container .avatar-img {
+    height: 70px;
+}
+
+.custom-badge-2 {
+    background: #ffffff;
+    border: 1px solid #7347f7 !important;
+    color: #7347f7 !important;
+    border-radius: 30px !important;
+    font-weight: 400 !important;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown-custom button {
+    background-color: transparent !important;
+    color: #af3fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0px;
+
+    &:hover {
+        color: #af3fff !important;
+    }
+
+    &:active {
+        color: #af3fff !important;
+    }
+}
+
+.back-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 1s ease-out;
+    transition: color 1s ease-out;
+
+    &:hover {
+        background-color: #bca8f9;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.dropdown-menu {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    border: none !important
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #af3fff !important
+}
+
+.main-game-container {
+    height: calc(100vh - 49px);
+    background-color: #8f75db;
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+}
+
+.game-back-btn {
+    margin-left: -30px;
+    border: none !important;
+    background-color: #7347f7 !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.domino-player-2-deck {
+    background-color: rgb(228, 165, 83);
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -48px;
+    left: 32%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+}
+
+.opponent-card {
+    position: relative;
+}
+
+.domino-player-2-deck img {
+    height: 70px;
+}
+
+.domino-main-deck {
+    background-color: rgb(228, 165, 83);
+    width: calc(100% - 30px);
+    position: absolute;
+    bottom: 0px;
+    left: 14px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .game-back-btn {
+        margin-left: -12px
+    }
+
+}
+
+.domino-player-3-deck {
+    background-color: rgb(228, 165, 83);
+    max-width: 90px;
+    width: 100%;
+    /* height: 242px; */
+    position: absolute;
+    top: 25%;
+    left: -3%;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.domino-player-4-deck {
+    background-color: rgb(228, 165, 83);
+    max-width: 90px;
+    width: 100%;
+    /* height: 242px; */
+    position: absolute;
+    top: 25%;
+    right: -3%;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.gap-76 {
+    gap: 76px;
+}
+
+.main-flex {
+    gap: 30px;
+}
+
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.score-container-opponent {
+    margin-top: 10px;
+}
+
+.score-container-opponent h1 {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    line-height: 1px
+}
+
+.score-container-opponent p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+}
+
+.opponent-card {
+    height: 58px !important;
+    width: 30px;
+
+}
+
+.my-dominos {
+    top: -50px;
+    height: 110px !important;
+    width: 55px;
+
+
+}
+
+.domino-img {
+    /* height: 100%;
+    width: 100%; */
+    margin-top: -60px;
+    height: 110px !important;
+    width: 55px;
+    border-radius: 5px;
+    object-fit: contain;
+}

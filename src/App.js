@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Dominoes from "./Components/Dominoes.jsx";
+import Games from "./Components/game/Game/Games.jsx";
+import Layout from "./Components/Layout/Layout.jsx";
+import CreateGame from "./Components/game/Game/CreateGame.jsx";
+import GameScreen from "./Components/game/Game/GameScreen.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <BrowserRouter>
+          <Routes>
+            {/* <Route path="/" element={<Dominoes />}/> */}
+            <Route path="/" element={<Games />} />
+            <Route path="/create-game" element={<CreateGame />} />
+            <Route path="/game" element={<GameScreen />} />
+          </Routes>
+        </BrowserRouter>
+      </Layout>
+    </>
   );
 }
 

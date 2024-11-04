@@ -1,0 +1,15 @@
+.players {
+  float: left;
+}
+
+.games {
+  background: grey;
+}
+
+.creategame {
+  display: flex;
+}
+
+.me {
+  font-weight: bold;
+}

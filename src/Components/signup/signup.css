@@ -1,0 +1,62 @@
+/* .signup-form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.signup-container {
+  overflow-x: hidden !important;
+  /* background: #fccb90;
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); */
+
+}
+.signup-container{
+  height: calc(100vh - 100px);
+  align-content: center;
+}
+.login-card {
+  width: 30rem;
+  border: 1px solid black;
+}
+
+.gradient-custom-2 {
+  background: #fccb90;
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.gredent-custom-1 {
+  background: hsla(171, 87%, 67%, 1);
+
+  background: -webkit-linear-gradient(90deg, hsl(211deg 100% 88.24%) 0%, hsl(275.68deg 90.24% 91.96%) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#61F4DE", endColorstr="#6E78FF", GradientType=1);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+
+.form-outline .form-control {
+  height: 55px;
+
+  &:active {
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    box-shadow: 0 12px 30px -1px rgba(77, 189, 186, 0.1)
+  }
+}
